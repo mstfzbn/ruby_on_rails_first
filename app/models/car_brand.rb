@@ -5,4 +5,5 @@ class CarBrand < ActiveRecord::Base
     #validation for input data
     #protects "NOT NULL" fields against missing user input
     validates_presence_of :brand
+    #validates :brand, presence: ture //second way for validation
 end
