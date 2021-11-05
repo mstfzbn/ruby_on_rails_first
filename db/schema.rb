@@ -13,4 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20211104180603) do
 
+  create_table "car_brand", force: :cascade do |t|
+    t.string "brand", limit: 32, null: false
+  end
+
+  create_table "car_models", force: :cascade do |t|
+    t.string "model", limit: 32, null: false
+  end
+
 end

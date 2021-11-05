@@ -1,6 +1,4 @@
 class CarModels < ActiveRecord::Migration
-  def change
-  end
 
   def self.up
     create_table :car_models do |t|
