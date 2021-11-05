@@ -1134,3 +1134,1457 @@ To disable this warning and keep the current behavior, you can add the following
   end
 
 Alternatively, you can opt into the future behavior by setting this option to `:random`. (called from test_order at /usr/share/rvm/gems/ruby-2.7.2/gems/activesupport-4.2.11.3/lib/active_support/test_case.rb:42)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:14:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"welcome"}):
+    12: </ul>
+    13: 
+    14: <% end %>
+    15: <p><%= link_to "Add new car brand", {:action => 'new' }%></p>
+  app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___1567132118381126880_12760'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:15:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/codex/Documents/git/ruby_on_rails_first/app/views/welcome/index.html.erb:15: syntax error, unexpected `ensure', expecting `end'
+          ensure
+          ^~~~~~
+/home/codex/Documents/git/ruby_on_rails_first/app/views/welcome/index.html.erb:17: syntax error, unexpected end-of-input, expecting `end'):
+  app/views/welcome/index.html.erb:15: syntax error, unexpected `ensure', expecting `end'
+  app/views/welcome/index.html.erb:17: syntax error, unexpected end-of-input, expecting `end'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:15:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:   <% end %>
+     8:   
+     9: <ul id = "car_brands">
+    10:    <% @car_brands.each do |c| %>
+    11:    <li><%= link_to c.brand, {:action => 'show', :id => c.id} -%></li>
+    12:    <% end %>
+    13: </ul>
+  app/views/welcome/index.html.erb:10:in `_app_views_welcome_index_html_erb___1567132118381126880_14320'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 295ms (Views: 294.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/car_brand.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/car_model.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2021-11-05 19:16:38 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:39 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:39 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:39 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:16:39 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:18 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:20 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:21 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:18:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:18:23 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:18:45 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/railties-4.2.11.3/lib/rails/templates/rails/welcome/index.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:19:48 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/codex/Documents/git/ruby_on_rails_first/app/views/car_brand/list.html.erb:12: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  app/views/car_brand/list.html.erb:12: syntax error, unexpected `ensure', expecting end-of-input
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:20:14 +0200
+Processing by CarBrandController#list as HTML
+  [1m[35mCarBrand Load (2.1ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  Rendered car_brand/list.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.1ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brands.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___3197388891670465813_38120'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:20:15 +0200
+Processing by CarBrandController#list as HTML
+  [1m[36mCarBrand Load (0.9ms)[0m  [1mSELECT `car_brands`.* FROM `car_brands`[0m
+  Rendered car_brand/list.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brands.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___3197388891670465813_38120'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:21:19 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:22:08 +0200
+Processing by CarBrandController#list as HTML
+  [1m[35mCarBrand Load (1.1ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  Rendered car_brand/list.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brand.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___3197388891670465813_39520'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:22:25 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:25 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:25 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:25 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:25 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:26 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:26 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:22:26 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 19:24:50 +0200
+
+
+Started POST "/car_brand/create" for 127.0.0.1 at 2021-11-05 19:25:03 +0200
+Processing by CarBrandController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rPjFaCPlMW4LyjjIlcKTjonK2fyz6oMq92hsQJsa6L1tokkCXKLXzTUQTicWvvumdhl/ZlFB5pykBUAOaodMEg==", "car_brand"=>{"description"=>""}, "commit"=>"Create"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: car_models):
+  app/controllers/car_brand_controller.rb:24:in `car_brand_params'
+  app/controllers/car_brand_controller.rb:16:in `create'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (17.8ms)
+
+
+Started POST "/car_brand/create" for 127.0.0.1 at 2021-11-05 19:27:06 +0200
+Processing by CarBrandController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rPjFaCPlMW4LyjjIlcKTjonK2fyz6oMq92hsQJsa6L1tokkCXKLXzTUQTicWvvumdhl/ZlFB5pykBUAOaodMEg==", "car_brand"=>{"description"=>""}, "commit"=>"Create"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: car_models):
+  app/controllers/car_brand_controller.rb:24:in `car_brand_params'
+  app/controllers/car_brand_controller.rb:16:in `create'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (18.6ms)
+
+
+Started POST "/car_brand/create" for 127.0.0.1 at 2021-11-05 19:27:09 +0200
+Processing by CarBrandController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rPjFaCPlMW4LyjjIlcKTjonK2fyz6oMq92hsQJsa6L1tokkCXKLXzTUQTicWvvumdhl/ZlFB5pykBUAOaodMEg==", "car_brand"=>{"description"=>""}, "commit"=>"Create"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: car_models):
+  app/controllers/car_brand_controller.rb:24:in `car_brand_params'
+  app/controllers/car_brand_controller.rb:16:in `create'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.8ms)
+
+
+Started POST "/car_brand/create" for 127.0.0.1 at 2021-11-05 19:27:32 +0200
+Processing by CarBrandController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rPjFaCPlMW4LyjjIlcKTjonK2fyz6oMq92hsQJsa6L1tokkCXKLXzTUQTicWvvumdhl/ZlFB5pykBUAOaodMEg==", "car_brand"=>{"description"=>"Hyundai"}, "commit"=>"Create"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: car_models):
+  app/controllers/car_brand_controller.rb:24:in `car_brand_params'
+  app/controllers/car_brand_controller.rb:16:in `create'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (18.0ms)
+
+
+Started GET "/car_brand/list" for 127.0.0.1 at 2021-11-05 19:27:46 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"car_brand/create", :controller=>"car_brand"}):
+    14: 
+    15: <h1>Add new car_brand</h1>
+    16: 
+    17: <%= form_tag :action => 'car_brand/create' do %>
+    18: <p><label for = "car_brand">Brand</label>:
+    19: 
+    20: 
+  app/views/car_brand/list.html.erb:17:in `_app_views_car_brand_list_html_erb___3197388891670465813_58380'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (18.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:55:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>New Project</h2>
+    2: <%= form_for(@car_brand) do |f| %>
+    3: <p>
+    4: <%= f.brand :name %><br />
+    5: </p>
+  app/views/car_brand/list.html.erb:2:in `_app_views_car_brand_list_html_erb___3197388891670465813_59100'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:56:02 +0200
+Processing by CarBrandController#list as HTML
+  [1m[35mCarBrand Load (1.1ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  Rendered car_brand/list.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `to_key' for #<CarBrand::ActiveRecord_Relation:0x00007f800401f500>
+Did you mean?  to_ary):
+    1: <h2>New Project</h2>
+    2: <%= form_for(@car_brands) do |f| %>
+    3: <p>
+    4: <%= f.brand :name %><br />
+    5: </p>
+  app/views/car_brand/list.html.erb:2:in `_app_views_car_brand_list_html_erb___3197388891670465813_59800'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (17.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 19:56:51 +0200
+Processing by CarBrandController#list as HTML
+  [1m[36mCarBrand Load (1.1ms)[0m  [1mSELECT `car_brands`.* FROM `car_brands`[0m
+  Rendered car_brand/list.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `to_key' for #<CarBrand::ActiveRecord_Relation:0x00007f801d6c3ac8>
+Did you mean?  to_ary):
+    1: <h2>New Project</h2>
+    2: <%= form_for(@car_brands) do |f| %>
+    3: 
+    4: <% end %>
+  app/views/car_brand/list.html.erb:2:in `_app_views_car_brand_list_html_erb___3197388891670465813_60540'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 20:01:48 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/car_brand.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 20:01:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:04 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 20:07:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36m (52.8ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (105.4ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (51.2ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (74.3ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (51.4ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (79.3ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (51.4ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (92.6ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.6ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (72.8ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (81.2ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (50.2ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (91.3ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (52.2ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (138.6ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (72.9ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (168.2ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.6ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (52.9ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (171.8ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (68.4ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (78.4ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (71.7ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (81.8ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (56.8ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (93.2ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (76.1ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (105.5ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (65.9ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (56.3ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (29.1ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (96.4ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (95.4ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (182.0ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.6ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+
+  [1m[36m (0.6ms)[0m  [1mSHOW CREATE TABLE `car_brand`[0m
+  [1m[35m (1.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+
+  [1m[36m (0.6ms)[0m  [1mSHOW CREATE TABLE `car_models`[0m
+  [1m[36m (34.8ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (57.7ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (52.9ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (130.3ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (69.0ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (79.2ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (33.4ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (80.3ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.6ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `car_brand`[0m
+  [1m[35m (1.0ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+
+  [1m[36m (0.4ms)[0m  [1mSHOW CREATE TABLE `car_models`[0m
+  [1m[36m (35.5ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (116.5ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (83.5ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (102.7ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (30.7ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (52.6ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (43.9ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (119.3ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (57.6ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (116.7ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (55.9ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (168.9ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (87.8ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (122.8ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (58.0ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (100.6ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.7ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+
+  [1m[36m (0.6ms)[0m  [1mSHOW CREATE TABLE `car_brand`[0m
+  [1m[35m (1.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+
+  [1m[36m (0.5ms)[0m  [1mSHOW CREATE TABLE `car_models`[0m
+  [1m[36m (69.8ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (79.6ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (31.5ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (50.6ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (84.4ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (190.2ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (63.3ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (91.9ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+
+  [1m[36m (0.5ms)[0m  [1mSHOW CREATE TABLE `car_brand`[0m
+  [1m[35m (1.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `car_models`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36m (129.4ms)[0m  [1mDROP DATABASE IF EXISTS `first_development`[0m
+  [1m[35m (133.4ms)[0m  DROP DATABASE IF EXISTS `first_test`
+  [1m[36m (19.1ms)[0m  [1mCREATE DATABASE `first_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (20.1ms)[0m  CREATE DATABASE `first_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (64.8ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (90.3ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (72.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (161.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (17.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20211104180603')
+  [1m[36m (23.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20211104180555')[0m
+  [1m[35m (76.4ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (108.6ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (175.8ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (209.4ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (21.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20211104180603')[0m
+  [1m[35m (39.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20211104180555')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (53.5ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (173.1ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (81.9ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (74.8ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (31.0ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (101.6ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (204.7ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (111.6ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (52.5ms)[0m  [1mDROP TABLE `car_brand` CASCADE[0m
+  [1m[35m (95.5ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (64.3ms)[0m  [1mDROP TABLE `car_models` CASCADE[0m
+  [1m[35m (80.4ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (58.3ms)[0m  DROP TABLE `car_brand` CASCADE
+  [1m[36m (88.7ms)[0m  [1mCREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (48.6ms)[0m  DROP TABLE `car_models` CASCADE
+  [1m[36m (75.3ms)[0m  [1mCREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 21:38:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (65.1ms)[0m  DROP TABLE `car_models`
+  [1m[36mSQL (9.6ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20211104180603'[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/codex/Documents/git/ruby_on_rails_first/db/migrate/20211104180603_car_models.rb:11)
+  [1m[35m (110.9ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL, `brand_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20211104180603')
+  [1m[36m (28.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (34.7ms)[0m  DROP TABLE `car_models`
+  [1m[36mSQL (19.8ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20211104180603'[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/codex/Documents/git/ruby_on_rails_first/db/migrate/20211104180603_car_models.rb:11)
+  [1m[35m (56.9ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL, `brand_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20211104180603')
+  [1m[36m (12.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.8ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (57.9ms)[0m  DROP TABLE `car_brand`
+  [1m[36mSQL (12.6ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20211104180555'[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/codex/Documents/git/ruby_on_rails_first/db/migrate/20211104180555_car_brands.rb:7)
+  [1m[35m (92.8ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20211104180555')
+  [1m[36m (12.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (1.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`

@@ -14,11 +14,16 @@
 ActiveRecord::Schema.define(version: 20211104180603) do
 
   create_table "car_brand", force: :cascade do |t|
-    t.string "brand", limit: 32, null: false
+    t.string   "brand",      limit: 32, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "car_models", force: :cascade do |t|
-    t.string "model", limit: 32, null: false
+    t.string   "model",      limit: 32, null: false
+    t.integer  "brand_id",   limit: 4,  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -1,11 +1,32 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
+  get 'car_brand/list'
+  get 'car_brand/show'
+  get 'car_brand/new'
+  post 'car_brand/create'
+  get 'car_brand/edit'
+  patch 'car_brand/update'
+  get 'car_brand/delete'
+
+
+  get 'car_model/list'
+  get 'car_model/show'
+  get 'car_model/new'
+  post 'car_model/create'
+  get 'car_model/edit'
+  patch 'car_model/update'
+  get 'car_model/delete'
+  get 'car_model/show_car_brands'
+
+
+     root 'car_brand#list'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'welcome#index'
+   #root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
