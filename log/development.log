@@ -1116,3 +1116,12 @@ To disable this warning and keep the current behavior, you can add the following
 
 Alternatively, you can opt into the future behavior by setting this option to `:random`. (called from test_order at /usr/share/rvm/gems/ruby-2.7.2/gems/activesupport-4.2.11.3/lib/active_support/test_case.rb:42)
   [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: You did not specify a value for the configuration option `active_support.test_order`. In Rails 5, the default value of this option will change from `:sorted` to `:random`.
+To disable this warning and keep the current behavior, you can add the following line to your `config/environments/test.rb`:
+
+  Rails.application.configure do
+    config.active_support.test_order = :sorted
+  end
+
+Alternatively, you can opt into the future behavior by setting this option to `:random`. (called from test_order at /usr/share/rvm/gems/ruby-2.7.2/gems/activesupport-4.2.11.3/lib/active_support/test_case.rb:42)
