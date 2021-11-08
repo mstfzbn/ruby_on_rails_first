@@ -15,21 +15,20 @@
 #     CarBrand.create( brand )
 # end
 
-models_list = [
-    { model: 'Coupe', brand: 'Hyundai'},
-    { model: 'i20', brand: 'Hyundai'},
-    { model: 'Elantra', brand: 'Hyundai'},
-    { model: 'Sportage', brand: 'KIA'},
-    { model: 'ProCeed', brand: 'KIA'},
-    { model: 'Celica', brand: 'Toyota'},
-    { model: 'Yaris', brand: 'Toyota'},
-    { model: 'E350', brand: 'Mercedes'},
-    { model: 'S500', brand: 'Mercedes'}
-]
+# models_list = [
+#     { model: 'Coupe', brand: 'Hyundai'},
+#     { model: 'i20', brand: 'Hyundai'},
+#     { model: 'Elantra', brand: 'Hyundai'},
+#     { model: 'Sportage', brand: 'KIA'},
+#     { model: 'ProCeed', brand: 'KIA'},
+#     { model: 'Celica', brand: 'Toyota'},
+#     { model: 'Yaris', brand: 'Toyota'},
+#     { model: 'E350', brand: 'Mercedes'},
+#     { model: 'S500', brand: 'Mercedes'}
+# ]
 
-models_list.each do | model |
-    CarModel.create( model )
-end
+# models_list.each do | model |
+#     CarModel.create( model )
+# end
 
-#CarBrand.create( 'Hyundai' )
 

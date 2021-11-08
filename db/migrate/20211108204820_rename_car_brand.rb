@@ -1,4 +1,6 @@
 class RenameCarBrand < ActiveRecord::Migration
+ #renames car_brand table to car_brands 
+  
   def self.up
     rename_table :car_brand, :car_brands
   end

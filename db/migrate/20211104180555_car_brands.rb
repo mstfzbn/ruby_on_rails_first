@@ -1,4 +1,5 @@
 class CarBrands < ActiveRecord::Migration
+#inital creation of table
 
   def self.up
     create_table :car_brand do |t|

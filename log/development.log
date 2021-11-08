@@ -3056,3 +3056,44 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'car_models'
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('Coupe', 'Hyundai', '2021-11-08 21:28:11', '2021-11-08 21:28:11')[0m
+  [1m[35m (9.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('i20', 'Hyundai', '2021-11-08 21:28:11', '2021-11-08 21:28:11')
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('Elantra', 'Hyundai', '2021-11-08 21:28:11', '2021-11-08 21:28:11')[0m
+  [1m[35m (16.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('Sportage', 'KIA', '2021-11-08 21:28:11', '2021-11-08 21:28:11')
+  [1m[36m (13.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('ProCeed', 'KIA', '2021-11-08 21:28:11', '2021-11-08 21:28:11')[0m
+  [1m[35m (16.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('Celica', 'Toyota', '2021-11-08 21:28:11', '2021-11-08 21:28:11')
+  [1m[36m (17.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('Yaris', 'Toyota', '2021-11-08 21:28:11', '2021-11-08 21:28:11')[0m
+  [1m[35m (14.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('E350', 'Mercedes', '2021-11-08 21:28:11', '2021-11-08 21:28:11')
+  [1m[36m (23.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `car_models` (`model`, `brand`, `created_at`, `updated_at`) VALUES ('S500', 'Mercedes', '2021-11-08 21:28:11', '2021-11-08 21:28:11')[0m
+  [1m[35m (25.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `car_brands` (`brand`, `created_at`, `updated_at`) VALUES ('Hyundai', '2021-11-08 21:32:13', '2021-11-08 21:32:13')[0m
+  [1m[35m (14.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `car_brands` (`brand`, `created_at`, `updated_at`) VALUES ('KIA', '2021-11-08 21:32:13', '2021-11-08 21:32:13')
+  [1m[36m (17.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `car_brands` (`brand`, `created_at`, `updated_at`) VALUES ('Toyota', '2021-11-08 21:32:13', '2021-11-08 21:32:13')[0m
+  [1m[35m (16.7ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `car_brands` (`brand`, `created_at`, `updated_at`) VALUES ('Mercedes', '2021-11-08 21:32:13', '2021-11-08 21:32:13')
+  [1m[36m (15.7ms)[0m  [1mCOMMIT[0m

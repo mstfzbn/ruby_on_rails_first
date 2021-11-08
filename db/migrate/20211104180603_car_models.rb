@@ -1,4 +1,5 @@
 class CarModels < ActiveRecord::Migration
+#inital creation of table
 
   #defines the properties of every table
   def self.up

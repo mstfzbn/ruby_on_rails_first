@@ -1,4 +1,5 @@
 class AddBrandColumnForCarModels < ActiveRecord::Migration
+#adds new brand string column
 
   def self.up
     change_table :car_models do |t|
