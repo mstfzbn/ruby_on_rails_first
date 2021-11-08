@@ -1,15 +1,12 @@
-<% if @car_brand.blank? %>
+<% if @car_brands.blank? %>
 <p>There are not any car brands currently in the system.</p>
 <% else %>
-<p>These are the current car brands in our system</p>
+<p>These are the current car brands in our system:</p>
   <% end %>
 
-
-
-
-
-
-
+   <% @car_brands.each do |b| %>
+   <li><%= link_to b.brand, {:action => 'show', :id => b.id} -%></li>
+   <% end %>
 
 
 

@@ -1,0 +1,17 @@
+<% if @car_models.blank? %>
+<p>There are not any car models currently in the system.</p>
+<% else %>
+<p>These are the current car models in our system:</p>
+  <% end %>  
+
+   <% @car_models.each do |m| %>
+   <li><%= link_to m.model, {:action => 'show', :id => m.id} -%></li>
+   <% end %>
+
+
+
+
+
+
+
+
