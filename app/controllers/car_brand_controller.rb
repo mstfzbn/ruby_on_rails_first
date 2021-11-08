@@ -10,18 +10,20 @@ class CarBrandController < ApplicationController
 
     def new
         @car_brand = CarBrand.new
+        binding.pry
     end
 
     def create
         @car_brand = CarBrand.new( car_brand_params ) 
 
+        binding.pry
         if @car_brand.save
             redirect_to :action => 'list'
         end
     end
 
     def car_brand_params
-        params.require(:car_models).permit(:model)
+        params.require(:car_brand).permit(:brand)
     end
 
     def edit
@@ -37,7 +39,7 @@ class CarBrandController < ApplicationController
     end
 
     def car_brand_param
-        params.require(:car_model).permit(:model)
+        params.require(:car_brand).permit(:brand)
     end
 
     def delete

@@ -1199,8 +1199,8 @@ Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
 ActionView::Template::Error (undefined method `each' for nil:NilClass):
      7:   <% end %>
      8:   
-     9: <ul id = "car_brands">
-    10:    <% @car_brands.each do |c| %>
+     9: <ul id = "car_brand">
+    10:    <% @car_brand.each do |c| %>
     11:    <li><%= link_to c.brand, {:action => 'show', :id => c.id} -%></li>
     12:    <% end %>
     13: </ul>
@@ -1402,12 +1402,12 @@ SyntaxError (/home/codex/Documents/git/ruby_on_rails_first/app/views/car_brand/l
 
 Started GET "/" for 127.0.0.1 at 2021-11-05 19:20:14 +0200
 Processing by CarBrandController#list as HTML
-  [1m[35mCarBrand Load (2.1ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  [1m[35mCarBrand Load (2.1ms)[0m  SELECT `car_brand`.* FROM `car_brand`
   Rendered car_brand/list.html.erb within layouts/application (3.7ms)
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.1ms)
 
-ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
-    1: <% if @car_brands.blank? %>
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brand' doesn't exist: SELECT `car_brand`.* FROM `car_brand`):
+    1: <% if @car_brand.blank? %>
     2: <p>There are not any car brands currently in the system.</p>
     3: <% else %>
     4: <p>These are the current car brands in our system</p>
@@ -1430,12 +1430,12 @@ ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands'
 
 Started GET "/" for 127.0.0.1 at 2021-11-05 19:20:15 +0200
 Processing by CarBrandController#list as HTML
-  [1m[36mCarBrand Load (0.9ms)[0m  [1mSELECT `car_brands`.* FROM `car_brands`[0m
+  [1m[36mCarBrand Load (0.9ms)[0m  [1mSELECT `car_brand`.* FROM `car_brand`[0m
   Rendered car_brand/list.html.erb within layouts/application (1.8ms)
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.9ms)
 
-ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
-    1: <% if @car_brands.blank? %>
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brand' doesn't exist: SELECT `car_brand`.* FROM `car_brand`):
+    1: <% if @car_brand.blank? %>
     2: <p>There are not any car brands currently in the system.</p>
     3: <% else %>
     4: <p>These are the current car brands in our system</p>
@@ -1485,11 +1485,11 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 Started GET "/" for 127.0.0.1 at 2021-11-05 19:22:08 +0200
 Processing by CarBrandController#list as HTML
-  [1m[35mCarBrand Load (1.1ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  [1m[35mCarBrand Load (1.1ms)[0m  SELECT `car_brand`.* FROM `car_brand`
   Rendered car_brand/list.html.erb within layouts/application (2.1ms)
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
 
-ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brand' doesn't exist: SELECT `car_brand`.* FROM `car_brand`):
     1: <% if @car_brand.blank? %>
     2: <p>There are not any car brands currently in the system.</p>
     3: <% else %>
@@ -1722,14 +1722,14 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
 
 Started GET "/" for 127.0.0.1 at 2021-11-05 19:56:02 +0200
 Processing by CarBrandController#list as HTML
-  [1m[35mCarBrand Load (1.1ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  [1m[35mCarBrand Load (1.1ms)[0m  SELECT `car_brand`.* FROM `car_brand`
   Rendered car_brand/list.html.erb within layouts/application (7.4ms)
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.1ms)
 
 ActionView::Template::Error (undefined method `to_key' for #<CarBrand::ActiveRecord_Relation:0x00007f800401f500>
 Did you mean?  to_ary):
     1: <h2>New Project</h2>
-    2: <%= form_for(@car_brands) do |f| %>
+    2: <%= form_for(@car_brand) do |f| %>
     3: <p>
     4: <%= f.brand :name %><br />
     5: </p>
@@ -1752,14 +1752,14 @@ Did you mean?  to_ary):
 
 Started GET "/" for 127.0.0.1 at 2021-11-05 19:56:51 +0200
 Processing by CarBrandController#list as HTML
-  [1m[36mCarBrand Load (1.1ms)[0m  [1mSELECT `car_brands`.* FROM `car_brands`[0m
+  [1m[36mCarBrand Load (1.1ms)[0m  [1mSELECT `car_brand`.* FROM `car_brand`[0m
   Rendered car_brand/list.html.erb within layouts/application (5.7ms)
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
 
 ActionView::Template::Error (undefined method `to_key' for #<CarBrand::ActiveRecord_Relation:0x00007f801d6c3ac8>
 Did you mean?  to_ary):
     1: <h2>New Project</h2>
-    2: <%= form_for(@car_brands) do |f| %>
+    2: <%= form_for(@car_brand) do |f| %>
     3: 
     4: <% end %>
   app/views/car_brand/list.html.erb:2:in `_app_views_car_brand_list_html_erb___3197388891670465813_60540'
@@ -2562,7 +2562,7 @@ WHERE fk.referenced_column_name is not null
 [0m
   [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/codex/Documents/git/ruby_on_rails_first/db/migrate/20211104180555_car_brands.rb:7)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/codex/Documents/git/ruby_on_rails_first/db/migrate/20211104180555_car_brand.rb:7)
   [1m[35m (92.8ms)[0m  CREATE TABLE `car_brand` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20211104180555')
@@ -2588,3 +2588,312 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'car_models'
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brand'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_brand`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:09:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CarBrandController#list as HTML
+  [1m[35mCarBrand Load (1.3ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  Rendered car_brand/list.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brand.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___534794971156419537_12800'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:09:29 +0200
+Processing by CarBrandController#list as HTML
+  [1m[36mCarBrand Load (1.1ms)[0m  [1mSELECT `car_brands`.* FROM `car_brands`[0m
+  Rendered car_brand/list.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brand.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___534794971156419537_12800'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:09:31 +0200
+Processing by CarBrandController#list as HTML
+  [1m[35mCarBrand Load (2.9ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  Rendered car_brand/list.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.9ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brand.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___534794971156419537_12800'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.0ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:09:35 +0200
+Processing by CarBrandController#list as HTML
+  [1m[36mCarBrand Load (1.1ms)[0m  [1mSELECT `car_brands`.* FROM `car_brands`[0m
+  Rendered car_brand/list.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brand.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___534794971156419537_12800'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (19.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:09:39 +0200
+Processing by CarBrandController#list as HTML
+  [1m[35mCarBrand Load (1.0ms)[0m  SELECT `car_brands`.* FROM `car_brands`
+  Rendered car_brand/list.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (Mysql2::Error: Table 'first_development.car_brands' doesn't exist: SELECT `car_brands`.* FROM `car_brands`):
+    1: <% if @car_brand.blank? %>
+    2: <p>There are not any car brands currently in the system.</p>
+    3: <% else %>
+    4: <p>These are the current car brands in our system</p>
+  app/views/car_brand/list.html.erb:1:in `_app_views_car_brand_list_html_erb___534794971156419537_12800'
+
+
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.0ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:13:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 234ms (Views: 225.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/car_brand.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/car_model.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:13:51 +0200
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:51 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:51 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:51 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:51 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:52 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:52 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 23:13:52 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 23:15:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 207ms (Views: 198.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-05 23:15:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-06 11:49:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CarBrandController#list as HTML
+  Rendered car_brand/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 197ms (Views: 184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:26 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:27 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:27 +0200
+
+
+Started GET "/assets/car_brand.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:27 +0200
+
+
+Started GET "/assets/car_model.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:27 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:27 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2021-11-06 11:49:27 +0200

@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'car_model/edit'
   patch 'car_model/update'
   get 'car_model/delete'
-  get 'car_model/show_car_brands'
+  get 'car_model/show_car_brand'
 
 
      root 'car_brand#list'

@@ -53,7 +53,7 @@ class CarModelController < ApplicationController
         redirect_to :action => 'list'
     end
 
-    def show_car_brands
+    def show_car_brand
         @car_brand = CarBrand.find(params[:id])
     end
 
