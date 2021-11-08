@@ -3097,3 +3097,42 @@ WHERE fk.referenced_column_name is not null
   [1m[36m (0.4ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.6ms)[0m  INSERT INTO `car_brands` (`brand`, `created_at`, `updated_at`) VALUES ('Mercedes', '2021-11-08 21:32:13', '2021-11-08 21:32:13')
   [1m[36m (15.7ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ReorderColumnsCarModles (20211108214210)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ReorderColumnsCarModles (20211108214210)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ReorderColumnsCarModles (20211108214210)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ReorderColumnsCarModles (20211108214210)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ReorderColumnsCarModles (20211108214210)
+  [1m[35m (0.5ms)[0m  ALTER TABLE `car_models` CHANGE `brand` `brand` model NOT NULL
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ReorderColumnsCarModles (20211108214210)
+  [1m[35m (208.1ms)[0m  ALTER TABLE `car_models` CHANGE `brand` `brand` varchar(255) NOT NULL AFTER `model`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20211108214210')
+  [1m[36m (18.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_brands'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_brands`
+  [1m[36m (0.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'first_development'
+  AND fk.table_name = 'car_models'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `car_models`
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20211108212047) do
+ActiveRecord::Schema.define(version: 20211108214210) do
 
   create_table "car_brands", force: :cascade do |t|
     t.string   "brand",      limit: 32, null: false
@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20211108212047) do
   end
 
   create_table "car_models", force: :cascade do |t|
-    t.string   "model",      limit: 32, null: false
+    t.string   "model",      limit: 32,  null: false
+    t.string   "brand",      limit: 255, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "brand",      limit: 32, null: false
   end
 
 end
