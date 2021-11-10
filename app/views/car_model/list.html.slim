@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Slim Examples
+    meta name="keywords" content="template language"
+
+  body
+
+    #content
+      p This example shows you how a basic Slim file looks.
+      
+    h1 Car Models
+
+
+    == yield
+
+    
+
+
+
+    - if @car_models.any?
+      table#car_models
+        - for @car_model in @car_models
+          tr
+            td.car_model = @car_model.model
+    - else
+      p No items found. Please add some inventory.
+        Thank you!

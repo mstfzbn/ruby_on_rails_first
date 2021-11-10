@@ -268,3 +268,18 @@ WHERE fk.referenced_column_name is not null
   [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
   [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
   [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36m (206.6ms)[0m  [1mDROP DATABASE IF EXISTS `first_test`[0m
+  [1m[35m (37.8ms)[0m  CREATE DATABASE `first_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (88.9ms)[0m  [1mCREATE TABLE `car_brands` (`id` int(11) auto_increment PRIMARY KEY, `brand` varchar(32) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (85.6ms)[0m  CREATE TABLE `car_models` (`id` int(11) auto_increment PRIMARY KEY, `model` varchar(32) NOT NULL, `brand` varchar(255) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (78.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (159.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (17.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20211108214210')
+  [1m[36m (17.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20211108212047')[0m
+  [1m[35m (18.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20211108204820')
+  [1m[36m (15.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20211104180603')[0m
+  [1m[35m (18.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20211108211508')
+  [1m[36m (12.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20211104180555')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
