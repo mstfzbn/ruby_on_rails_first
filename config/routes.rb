@@ -20,7 +20,8 @@ Rails.application.routes.draw do
   get 'car_model/show_car_brand'
 
 
-     root 'car_model#list'
+root 'car_model#list'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
