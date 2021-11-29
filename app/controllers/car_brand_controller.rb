@@ -10,13 +10,11 @@ class CarBrandController < ApplicationController
 
     def new
         @car_brand = CarBrand.new
-        binding.pry
     end
 
     def create
         @car_brand = CarBrand.new( car_brand_params ) 
 
-        binding.pry
         if @car_brand.save
             redirect_to :action => 'list'
         end
